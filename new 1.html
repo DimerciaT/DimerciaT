@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combatting Misinformation</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section styling */
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-selector">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('fr')">Français</button>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1 id="header-title">Combatting Misinformation</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" id="nav-about">About Us</a></li>
+                <li><a href="#database" id="nav-database">Database</a></li>
+                <li><a href="#tracker" id="nav-tracker">Legislation Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Searchable Database -->
+    <section id="database">
+        <h2 id="database-title">Misinformation Database</h2>
+        <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterTable()">
+        <table id="database-table">
+            <thead>
+                <tr>
+                    <th id="table-header-title">Title</th>
+                    <th id="table-header-source">Source</th>
+                    <th id="table-header-date">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Misinformation on Social Media</td>
+                    <td>Source A</td>
+                    <td>2023-09-10</td>
+                </tr>
+                <tr>
+                    <td>False COVID-19 Claims</td>
+                    <td>Source B</td>
+                    <td>2023-08-15</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Legislation Tracker -->
+    <section id="tracker">
+        <h2 id="tracker-title">Legislation Tracker</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th id="tracker-header-title">Legislation</th>
+                    <th id="tracker-header-status">Status</th>
+                    <th id="tracker-header-summary">Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anti-Misinformation Act</td>
+                    <td>Passed</td>
+                    <td>Legislation to combat online misinformation.</td>
+                </tr>
+                <tr>
+                    <td>Media Regulation Bill</td>
+                    <td>Pending</td>
+                    <td>Proposed bill for stricter media regulations.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">© 2024 Combatting Misinformation</p>
+    </footer>
+
+    <script>
+        // Multilingual support
+        const translations = {
+            "en": {
+                "header-title": "Combatting Misinformation",
+                "nav-about": "About Us",
+                "nav-database": "Database",
+                "nav-tracker": "Legislation Tracker",
+                "database-title": "Misinformation Database",
+                "table-header-title": "Title",
+                "table-header-source": "Source",
+                "table-header-date": "Date",
+                "tracker-title": "Legislation Tracker",
+                "tracker-header-title": "Legislation",
+                "tracker-header-status": "Status",
+                "tracker-header-summary": "Summary",
+                "footer-text": "© 2024 Combatting Misinformation"
+            },
+            "es": {
+                "header-title": "Combatiendo la Desinformación",
+                "nav-about": "Sobre Nosotros",
+                "nav-database": "Base de Datos",
+                "nav-tracker": "Rastreador de Legislación",
+                "database-title": "Base de Datos de Desinformación",
+                "table-header-title": "Título",
+                "table-header-source": "Fuente",
+                "table-header-date": "Fecha",
+                "tracker-title": "Rastreador de Legislación",
+                "tracker-header-title": "Legislación",
+                "tracker-header-status": "Estado",
+                "tracker-header-summary": "Resumen",
+                "footer-text": "© 2024 Combatiendo la Desinformación"
+            },
+            "fr": {
+                "header-title": "Lutte contre la Désinformation",
+                "nav-about": "À Propos",
+                "nav-database": "Base de Données",
+                "nav-tracker": "Suivi de la Législation",
+                "database-title": "Base de Données de Désinformation",
+                "table-header-title": "Titre",
+                "table-header-source": "Source",
+                "table-header-date": "Date",
+                "tracker-title": "Suivi de la Législation",
+                "tracker-header-title": "Législation",
+                "tracker-header-status": "Statut",
+                "tracker-header-summary": "Résumé",
+                "footer-text": "© 2024 Lutte contre la Désinformation"
+            }
+        };
+
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll("[id]");
+            elements.forEach(el => {
+                const id = el.id;
+                if (translations[lang][id]) {
+                    el.innerHTML = translations[lang][id];
+                }
+            });
+        }
+
+        // Searchable database
+        function filterTable() {
+            let input = document.getElementById('search-bar').value.toUpperCase();
+            let table = document.getElementById('database-table');
+            let tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName('td')[0]; // Search by first column (title)
+                if (td) {
+                    let txtValue = td.textContent || td.innerText;
+                    tr[i].style.display = txtValue.toUpperCase().indexOf(input) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
