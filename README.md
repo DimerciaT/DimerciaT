@@ -1,10 +1,10 @@
 - 👋 Hi, I’m @DimerciaT
 - 👀 I’m interested in becoming a Full Stack Developer.
-- 🌱 I’m currently learning JavaScript, Python and a few more.
+- 🌱 I’m currently learning HTML and CSS.
 - 💞️ I’m not sure what looking to collaborate on...
-- 📫 How to reach me tshiamaladimercia0@gmail.com 
+- 📫 How to reach me: tshiamaladimercia0@gmail.com 
 - 😄 Pronouns: She/Her
-- ⚡ Fun fact: I'm in High School.
+- ⚡ Fun fact: My favourite artist in Justin Bieber.
 
 <!---
 DimerciaT/DimerciaT is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
