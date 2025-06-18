@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @DimerciaT
-- 👀 I’m interested in becoming a Full Stack Developer.
+- 👀 I’m interested in becoming a Software Developer.
 - 🌱 I’m currently learning HTML and CSS.
 - 💞️ I’m not sure what looking to collaborate on...
 - 📫 How to reach me: tshiamaladimercia0@gmail.com 
