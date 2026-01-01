@@ -1,4 +1,4 @@
--- 👋 Hi, I’m @DimerciaT
+* 👋 Hi, I’m @DimerciaT
 - 👀 I’m interested in becoming a Software Developer.
 - 🌱 I’m currently learning HTML and CSS and Python.
 - 📫 How to reach me: tshiamaladimercia0@gmail.com 
